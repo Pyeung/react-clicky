@@ -1,5 +1,29 @@
+// let priorClick = false;
+// let updateCards = this.state.cards.map(card => {
+//   if (card.id === id) {
+//     if (card.clicked) {
+//       priorClick = true;
+//       return card;
+//     } else {
+//       return {
+//         ...card,
+//         clicked: true
+//       };
+//     }
+//   } else {
+//     return card;
+//   }
+// });
+// if(priorClick){
+//     console.log("RESET")
+//     this.setState({ cards: Data }, ()=> console.log(this.state.cards))
+// } else {
+//     this.setState({ cards: updateCards}, ()=>console.log(this.state.cards))
+// }
+
 import React, { Component } from "react";
 import Data from "../utils/data";
+import marvelData from "./marvel";
 import Card from "./Card";
 
 class Game extends Component {
@@ -32,6 +56,23 @@ class Game extends Component {
     );
   };
 
+  randomizer(array) {
+    let currentIndex = array.length;
+    let temporaryValue;
+    let randomIndex;
+  
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+
   handleClick = id => {
     console.log(id, this.state.clicked);
     if (this.state.clicked.includes(id)) {
@@ -41,32 +82,10 @@ class Game extends Component {
       this.scoreUpdate();
       this.setState({ clicked: [...this.state.clicked, id] });
     }
-    // let priorClick = false;
-    // let updateCards = this.state.cards.map(card => {
-    //   if (card.id === id) {
-    //     if (card.clicked) {
-    //       priorClick = true;
-    //       return card;
-    //     } else {
-    //       return {
-    //         ...card,
-    //         clicked: true
-    //       };
-    //     }
-    //   } else {
-    //     return card;
-    //   }
-    // });
-    // if(priorClick){
-    //     console.log("RESET")
-    //     this.setState({ cards: Data }, ()=> console.log(this.state.cards))
-    // } else {
-    //     this.setState({ cards: updateCards}, ()=>console.log(this.state.cards))
-    // }
   };
 
   render() {
-
+    const randomData = this.randomizer(marvelData);
     return (
       <div className="container">
         Score: {this.state.Score}, TopScore: {this.state.TopScore} <br />
@@ -76,6 +95,7 @@ class Game extends Component {
               key={i + "-card"}
               card={card}
               handleClick={this.handleClick}
+              background={randomData[i].image}
             />
           ))}
         </div>

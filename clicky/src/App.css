@@ -10,8 +10,8 @@
 }
 .card {
   width: 25%;
-  background-color: red;
-  height: 100px;
+  height: 250px;
   text-align: center;
   align-content: center;
+  border-spacing: 10px;
 }
