@@ -5,11 +5,11 @@ const data = [
     },
     {
         id: 2,
-        image: "https://pyeung.github.io/react-clicky/image/hulk.jpg?raw=true"
+        image: "./image/hulk.jpg"
     },
     {
         id: 3,
-        image: "https://pyeung.github.io/react-clicky/image/black-panther.jpg?raw=true"
+        image: "./image/black-panther.jpg"
     },
     {
         id: 4,
