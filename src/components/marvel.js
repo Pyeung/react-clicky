@@ -9,43 +9,43 @@ const data = [
     },
     {
         id: 3,
-        image: "/image/black-panther.jpg"
+        image: "./image/black-panther.jpg"
     },
     {
         id: 4,
-        image: "/image/groot.jpg"
+        image: "./image/groot.jpg"
     },
     {
         id: 5,
-        image: "/image/ironman.jpg"
+        image: "./image/ironman.jpg"
     },
     {
         id: 6,
-        image: "/image/falcon.jpg"
+        image: "./image/falcon.jpg"
     },
     {
         id: 7,
-        image: "/image/scarlet.jpg"
+        image: "./image/scarlet.jpg"
     },
     {
         id: 8,
-        image: "/image/winter.jpg"
+        image: "./image/winter.jpg"
     },
     {
         id: 9,
-        image: "/image/thor.jpg"
+        image: "./image/thor.jpg"
     },
     {
         id: 10,
-        image: "/image/capt-marvel.jpg"
+        image: "./image/capt-marvel.jpg"
     },
     {
         id:11,
-        image: "/image/capt-america.jpg"
+        image: "./image/capt-america.jpg"
     },
     {
         id:12,
-        image: "/image/spider.jpg"
+        image: "./image/spider.jpg"
     }
 ]
 
