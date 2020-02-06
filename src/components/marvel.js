@@ -17,7 +17,7 @@ const data = [
     },
     {
         id: 5,
-        image: "./image/ironman.jpg"
+        image: "../image/ironman.jpg"
     },
     {
         id: 6,
