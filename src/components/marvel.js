@@ -5,7 +5,7 @@ const data = [
     },
     {
         id: 2,
-        image: "./image/hulk.jpg"
+        image: "https://pyeung.github.io/react-clicky/image/hulk.jpg?raw=true"
     },
     {
         id: 3,
