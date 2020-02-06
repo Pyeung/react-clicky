@@ -1,11 +1,11 @@
 const data = [
     {
         id: 1,
-        image: "/image/antman.jpg"
+        image: "build\image\antman.jpg"
     },
     {
         id: 2,
-        image: "/image/hulk.jpg"
+        image: "./image/hulk.jpg"
     },
     {
         id: 3,
