@@ -9,7 +9,7 @@ const data = [
     },
     {
         id: 3,
-        image: "./image/black-panther.jpg"
+        image: "public\image\black-panther.jpg"
     },
     {
         id: 4,
