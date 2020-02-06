@@ -1,7 +1,7 @@
 const data = [
     {
         id: 1,
-        image: "build\image\antman.jpg"
+        image: "https://github.com/Pyeung/react-clicky/blob/master/src/image/antman.jpg?raw=true"
     },
     {
         id: 2,
