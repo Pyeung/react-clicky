@@ -1,7 +1,7 @@
 const data = [
     {
         id: 1,
-        image: "https://github.com/Pyeung/react-clicky/blob/master/src/image/antman.jpg?raw=true"
+        image: "./image/antman.jpg"
     },
     {
         id: 2,
@@ -9,7 +9,7 @@ const data = [
     },
     {
         id: 3,
-        image: ".\image\black-panther.jpg"
+        image: "https://pyeung.github.io/react-clicky/image/black-panther.jpg?raw=true"
     },
     {
         id: 4,
@@ -17,7 +17,7 @@ const data = [
     },
     {
         id: 5,
-        image: "../image/ironman.jpg"
+        image: "./image/ironman.jpg"
     },
     {
         id: 6,
